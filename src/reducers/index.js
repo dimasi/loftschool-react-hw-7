@@ -6,3 +6,6 @@ export default combineReducers({
   search,
   shows
 });
+
+export const getSearchProps = state => state.search;
+export const getShowProps = state => state.shows;

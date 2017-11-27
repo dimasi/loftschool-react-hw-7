@@ -1,0 +1,96 @@
+.ShowPage__heading {
+  margin: 15px 0 25px;
+  text-align: center;
+}
+
+.ShowPage__cover {
+  display: block;
+  width: 480px;
+  margin: 0 auto 50px;
+}
+
+.ShowPage__no-cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 480px;
+  height: 706px;
+  margin: 0 auto;
+  background: #efefef;
+  color: #ccc;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.ShowPage__actors-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  position: relative;
+}
+
+.ShowPage__actors-header::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  z-index: 1;
+  top: 39px;
+  left: 10%;
+  background-color: #4a4a4a;
+}
+
+.ShowPage__actors-heading {
+  padding: 0 15px;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.ShowPage__actors-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0 -5px;
+}
+
+.ShowPage__actor {
+  width: calc(100% / 3);
+  padding: 0 5px;
+  margin-bottom: 30px;
+}
+
+.ShowPage__actor-photo {
+  display: block;
+  width: 100%;
+}
+
+.ShowPage__actor-no-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  height: 323px;
+  background: #efefef;
+  color: #ccc;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.ShowPage__actor-name {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.ShowPage__actor-role {
+  display: block;
+  text-align: center;
+  color: #777;
+  font-size: 12px;
+}
