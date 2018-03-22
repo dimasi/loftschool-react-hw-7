@@ -11,7 +11,7 @@ class AppRouter extends Component {
         <Switch>
           <Route path="/" exact component={Search} />
           <Route path="/shows/:id" component={ShowPage} />
-          <Redirect to="/" />
+          <Redirect from="*" to="/" />
         </Switch>
       </div>
     );
