@@ -127,9 +127,14 @@ class ShowPage extends PureComponent {
   }
 }
 
-const mapStateToProps = state => ({
-  ...getShowProps(state)
-});
+const mapStateToProps = state => {
+  const {entities, isFetching} = getShowProps(state);
+
+  return {
+    entities,
+    isFetching 
+  };
+};
 
 const mapDispatchToProps = {
   request
